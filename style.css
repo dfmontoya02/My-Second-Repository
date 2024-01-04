@@ -1,0 +1,146 @@
+html {
+  font-size: 100%;
+  line-height: 1.5rem;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 0 auto;
+  padding: 0;
+  min-height: 100vh;
+  min-width: 1400px;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: black;
+}
+
+.header-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  line-height: 1rem;
+  overflow: hidden;
+  margin-bottom: 0.5rem;
+  background-color: #8b6c5c;
+}
+
+.logo,
+.nav-menu {
+  text-transform: uppercase;
+}
+
+.nav-menu {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+
+.nav-item {
+  flex: 1 0 10%;
+  text-align: center;
+}
+
+.logo a,
+.nav-menu a {
+  display: block;
+  padding: 0.8rem;
+  letter-spacing: 0.2rem;
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+.logo {
+  margin: 0 auto;
+}
+
+/*  not necessary or now. But this makes the distinction bw "Daniel Montoya" and the other stuff */
+.logo a {
+  color: whitesmoke;
+}
+/* same thing here */
+.nav-menu a {
+  color: whitesmoke;
+  transition: all ease-in-out 0.5s;
+}
+
+.nav-menu a:hover {
+  color: #3d251e;
+  transform: scale(1.1);
+}
+
+.nav-menu a:active {
+  transform: scale(0.9);
+}
+
+/* second navbar style */
+.header-nav-2 {
+  background-color: white;
+  font-family: "Montserrat", sans-serif;
+}
+.logo-2,
+.nav-menu-2 {
+  text-transform: capitalize;
+}
+.logo-2 a,
+.nav-menu-2 a {
+  color: black;
+  text-decoration: none;
+}
+.logo-2 a {
+  font-weight: 300;
+  font-size: 2rem;
+}
+.nav-menu-2 a {
+  font-weight: 300;
+  letter-spacing: 0.1rem;
+  border-bottom: 1px solid white;
+  transition: all ease 0.5s;
+}
+.nav-menu-2 a:hover {
+  background-color: white;
+  color: black;
+  transform: none;
+  border-bottom: 1px solid black;
+  transition: all ease 0s;
+}
+
+@media (min-width: 600px) {
+  .header-nav {
+    line-height: 100%;
+  }
+  .nav-menu {
+    width: 100%;
+  }
+  .nav-item {
+    flex: 1 0 10%;
+  }
+}
+
+@media (min-width: 900px) {
+  .header-nav {
+    justify-content: space-between;
+    padding: 1rem 0;
+    margin: 1rem auto 2rem auto;
+  }
+  .nav-menu {
+    width: auto;
+  }
+  .logo {
+    margin: 0 0 0 0.3rem;
+  }
+}
